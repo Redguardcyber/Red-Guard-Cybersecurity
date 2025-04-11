@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Guard Cybersecurity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .lang-switch a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #c30000;
+    }
+    section {
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+    a.button, button {
+      display: inline-block;
+      background-color: #c30000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-content').forEach(div => div.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+    window.onload = () => switchLang('en');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Red Guard Cybersecurity</h1>
+    <p>Professional Penetration Testing Services for Web, Networks, and Applications</p>
+    <div class="lang-switch">
+      <a href="#" onclick="switchLang('en')">EN</a> | <a href="#" onclick="switchLang('it')">IT</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="en" class="lang-content">
+      <section>
+        <h2>About Us</h2>
+        <p>We are cybersecurity specialists. We provide penetration testing for websites, applications, and business infrastructure, with clear reports and risk mitigation support.</p>
+      </section>
+
+      <section>
+        <h2>Services</h2>
+        <ul>
+          <li>Security testing for WordPress sites and web apps</li>
+          <li>Internal network vulnerability analysis</li>
+          <li>Detailed PDF reports with remediation suggestions</li>
+          <li>Bug bounty support and startup assistance</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <p>Need a free analysis of your website? Contact us now!</p>
+        <form action="mailto: redguardcyber@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <div id="it" class="lang-content">
+      <section>
+        <h2>Chi siamo</h2>
+        <p>Siamo specialisti in sicurezza informatica. Offriamo test di penetrazione per siti web, applicazioni e infrastrutture aziendali, con report chiari e supporto alla mitigazione dei rischi.</p>
+      </section>
+
+      <section>
+        <h2>Servizi</h2>
+        <ul>
+          <li>Test di sicurezza per siti WordPress e web app</li>
+          <li>Analisi vulnerabilità rete interna</li>
+          <li>Report PDF dettagliati con soluzioni consigliate</li>
+          <li>Supporto bug bounty e assistenza a startup</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contattaci</h2>
+        <p>Vuoi un'analisi gratuita del tuo sito? Scrivici ora!</p>
+        <form action="mailto: redguardcyber@gmail.com" method="post" enctype="text/plain">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+
+          <button type="submit">Invia Messaggio</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Red Guard Cybersecurity - All rights reserved
+  </footer>
+</body>
+</html>
