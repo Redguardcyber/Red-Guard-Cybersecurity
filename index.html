@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Guard Cybersecurity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Red Guard</h1>
+      <span>Cybersecurity</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services" data-lang="services">Servizi</a></li>
+        <li><a href="#about" data-lang="about">Chi Siamo</a></li>
+        <li><a href="#contact" data-lang="contact">Contatti</a></li>
+      </ul>
+      <button onclick="changeLanguage('it')">IT</button> | <button onclick="changeLanguage('en')">EN</button>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2 data-lang="hero-title">Proteggi il tuo futuro con Cybersecurity professionale</h2>
+      <p data-lang="hero-desc">Servizi di penetration testing, valutazione vulnerabilità e formazione per proteggere il tuo business.</p>
+      <a href="#contact" class="cta-btn" data-lang="cta-btn">Contattaci</a>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 data-lang="services-title">I Nostri Servizi</h2>
+      <div class="service-box">
+        <h3 data-lang="pentest">Penetration Testing</h3>
+        <p data-lang="pentest-desc">Test approfonditi per identificare vulnerabilità e minacce nei tuoi sistemi.</p>
+      </div>
+      <div class="service-box">
+        <h3 data-lang="vuln-assessment">Valutazione delle Vulnerabilità</h3>
+        <p data-lang="vuln-assessment-desc">Analisi dettagliata delle vulnerabilità per ridurre i rischi e migliorare la sicurezza.</p>
+      </div>
+      <div class="service-box">
+        <h3 data-lang="training">Formazione e Consulenza</h3>
+        <p data-lang="training-desc">Programmi di formazione e consulenza per aumentare la consapevolezza e la protezione.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 data-lang="about-title">Chi Siamo</h2>
+      <p data-lang="about-desc">Red Guard Cybersecurity è un team di esperti in sicurezza informatica che si impegna a proteggere la tua azienda dalle minacce digitali con servizi di alta qualità.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 data-lang="contact-title">Contattaci</h2>
+      <form id="contact-form" action="https://formspree.io/f/mjvjplkj" method="POST">
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="message" name="message" placeholder="Messaggio" required></textarea>
+        <button type="submit" class="cta-btn" data-lang="send-btn">Invia Messaggio</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Red Guard Cybersecurity. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+</html>
